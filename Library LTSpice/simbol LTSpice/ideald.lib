@@ -1,0 +1,5 @@
+.subckt ideald in out
+D1 in out ideal_D
+.model D D
+.model ideal_D D(Ron=1m Roff=10Meg)
+.ends ideald

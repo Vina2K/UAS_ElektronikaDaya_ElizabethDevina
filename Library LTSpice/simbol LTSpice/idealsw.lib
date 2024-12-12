@@ -1,0 +1,8 @@
+.subckt idealsw G pos neg
+SW neg pos gate 0 ideal_sw
+D1 neg pos ideal_D
+B1 gate 0 V=V(G)
+.model D D
+.model ideal_sw SW(Ron=1m Roff=1Meg Vt=.5 Vh=-.4)
+.model ideal_D D(Ron=1m Roff=10Meg)
+.ends idealsw

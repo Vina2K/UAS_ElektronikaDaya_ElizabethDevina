@@ -1,0 +1,5 @@
+.subckt dqtoabc d q theta a b c
+B1 a 0 V=cos(V(theta))*V(d)-sin(V(theta))*V(q)
+B2 b 0 V=(-1/2)*cos(V(theta))*V(d)+(sqrt(3)/2)*sin(V(theta))*V(d)+(1/2)*sin(V(theta))*V(q)+(sqrt(3)/2)*cos(V(theta))*V(q)
+B3 c 0 V=(-1/2)*cos(V(theta))*V(d)-(sqrt(3)/2)*sin(V(theta))*V(d)+(1/2)*sin(V(theta))*V(q)-(sqrt(3)/2)*cos(V(theta))*V(q)
+.ends dqtoabc
